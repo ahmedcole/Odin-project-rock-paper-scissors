@@ -16,7 +16,7 @@ function getComputerChoice() {
 
 // human input choice logic
 function getHumanChoice() {
-  let userInput = prompt("Please enter your move! ");
+  let userInput = prompt("Please enter your move! (rock, paper or scissors) ");
   if (userInput === null || userInput === "") {
     userInput = prompt("input your move!");
   } else {
@@ -55,10 +55,7 @@ function playGame() {
   const humanSelection = getHumanChoice();
   const computerSelection = getComputerChoice();
   playRound(humanSelection, computerSelection);
-  console.log(
-    `human score ${humanScore} - computer score ${computerScore} - draw ${draw}`
-  );
-  console.log(`Play round ${playFiveRound}`);
+
   if (playFiveRound === 5) {
     if (humanScore > computerScore) {
       console.log("5 rounds complete you win!");
@@ -69,5 +66,12 @@ function playGame() {
     }
   } else if (playFiveRound > 5) {
     playFiveRound = 0;
+    humanScore = 0;
+    computerScore = 0;
+    draw = 0;
   }
+  console.log(
+    `human score ${humanScore} - computer score ${computerScore} - draw ${draw}`
+  );
+  console.log(`Play round ${playFiveRound}`);
 }
