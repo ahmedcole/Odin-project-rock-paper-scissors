@@ -12,10 +12,73 @@ button {
   padding: 8px 16px;
 }
 
-div {
-  text-align: center;
-}
 p {
   color: white;
   font-size: 18px;
+}
+
+
+
+.pick-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.pick-container div {
+  background-color: #fff;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paper:hover,
+.rock:hover,
+.scissors:hover {
+  background: #5e575783;
+  cursor: pointer;
+}
+
+.paper img,
+.rock img,
+.scissors img {
+  width: 64px;
+  height: 64px;
+}
+
+.result-container {
+  background-color: white;
+  list-style: none;
+  padding-block: 18px;
+  padding-inline: 24px;
+}
+
+.result-text {
+  font-size: 24px;
+}
+
+.player-move-result {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-block: 24px;
+}
+
+.player-move-result img {
+  width: 40px;
+  height: 40px;
+}
+
+.win-lose {
+  font-size: 32px;
+  text-align: center;
+  margin-block: 40px;
+}
+
+.fiveRound {
+  margin-top: 24px;
+  text-align: center;
+  font-weight: bold;
 }
