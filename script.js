@@ -47,9 +47,9 @@ function playRound(computerChoice, humanChoice) {
   if (humanChoice === computerChoice) {
     document.querySelector(
       ".player-move-result"
-    ).innerHTML = `<span>Your Move</span><img src="/img-file/${humanChoice}.png" /><span
+    ).innerHTML = `<span>Your Move</span><img src="./${humanChoice}.png" /><span
             >Computer Move</span
-          ><img src="/img-file/${computerChoice}.png" alt="" />`;
+          ><img src="./${computerChoice}.png" alt="" />`;
     document.querySelector(".win-lose").textContent = "IT'S A TIE!";
 
     draw += 1;
@@ -60,18 +60,18 @@ function playRound(computerChoice, humanChoice) {
   ) {
     document.querySelector(
       ".player-move-result"
-    ).innerHTML = `<span>Your Move</span><img src="/img-file/${humanChoice}.png" /><span
+    ).innerHTML = `<span>Your Move</span><img src="./${humanChoice}.png" /><span
             >Computer Move</span
-          ><img src="/img-file/${computerChoice}.png" alt="" />`;
+          ><img src="./${computerChoice}.png" alt="" />`;
     document.querySelector(".win-lose").textContent = "YOU LOSE!";
 
     computerScore += 1;
   } else {
     document.querySelector(
       ".player-move-result"
-    ).innerHTML = `<span>Your Move</span><img src="/img-file/${humanChoice}.png" /><span
+    ).innerHTML = `<span>Your Move</span><img src="./${humanChoice}.png" /><span
             >Computer Move</span
-          ><img src="/img-file/${computerChoice}.png" alt="" />`;
+          ><img src="./${computerChoice}.png" alt="" />`;
     document.querySelector(".win-lose").textContent = "YOU WIN!";
 
     humanScore += 1;
